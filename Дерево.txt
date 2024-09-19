@@ -1,0 +1,5 @@
+App
+ SearchBar (для пошуку)
+
+ ToDoList
+   └── ToDoItem (для кожного завдання)
