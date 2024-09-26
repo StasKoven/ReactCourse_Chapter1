@@ -2,7 +2,7 @@ import AddTodo from './AddTodo'
 import SearchTodo from './SearchTodo'
 import TodoList from './TodoList'
 import useTodos from '../hooks/useTodos'
-const Layout = () => {
+const Container = () => {
   const { todos, addTodo, removeTodo, handleSearch } = useTodos()
   return (
     <div className="layout">
@@ -14,4 +14,4 @@ const Layout = () => {
   )
 }
 
-export default Layout
+export default Container
