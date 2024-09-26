@@ -1,10 +1,10 @@
-function ToDoItem({ task, removeTask }) {
-    return (
-      <li>
-        {task.title}
-        <button onClick={() => removeTask(task.id)}>Remove</button>
-      </li>
-    );
-  }
-  
-  export default ToDoItem;
+const TodoItem = ({ todo, onRemove }) => {
+  return (
+    <li>
+      {todo.title}
+      <button onClick={() => onRemove(todo.id)}>Remove</button>
+    </li>
+  )
+}
+
+export default TodoItem

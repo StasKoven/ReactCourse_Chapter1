@@ -1,132 +1,88 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #e0f7fa;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.app {
-  background-color: #ffffff;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+  background: linear-gradient(to right, #fc466b, #3f5efb);
   border-radius: 12px;
-  padding: 30px;
-  max-width: 500px;
-  width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.app:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+.App {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: left;
+  color: #000;
 }
 
 h1 {
-  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
   color: #333;
-  text-align: center;
-  margin-bottom: 25px;
-  font-weight: 600;
-}
-
-/* Стилі для інпутів */
-.input {
-  width: 100%;
-  padding: 14px;
-  border-radius: 8px;
-  border: 1px solid #d1d1d1;
   margin-bottom: 15px;
-  font-size: 16px;
-  outline: none;
-  transition: border-color 0.3s ease;
 }
 
-.input:focus {
-  border-color: #00796b;
-}
-
-.add-task {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-/* Стиль для кнопки */
-.button {
-  padding: 12px 20px;
-  background-color: #00796b;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.button:hover {
-  background-color: #004d40;
-  transform: scale(1.05);
-}
-
-/* Стилі для таблиці */
-table {
+input[type="text"] {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
 }
 
-th, td {
-  padding: 14px;
-  text-align: left;
-  border-bottom: 1px solid #eaeaea;
-  font-size: 16px;
-}
-
-th {
-  background-color: #e0f7fa;
-  font-weight: 600;
-  color: #555;
-}
-
-td {
-  color: #555;
-}
-
-td button {
-  padding: 8px 12px;
-  background-color: #e74c3c;
+button {
+  padding: 10px 25px;
+  background-color: #007bff;
   color: white;
-  font-size: 14px;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
+  font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
-td button:hover {
-  background-color: #c0392b;
+button:hover {
+  background-color: #0056b3;
 }
 
-/* Поле пошуку */
-.search-bar {
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f8f9fa;
+  border: 1px solid #e3e6f0;
+  margin-bottom: 10px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  align-items: center;
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
 }
 
-.search-bar input {
-  width: calc(100% - 20px);
-  padding: 14px;
-  border-radius: 8px;
-  border: 1px solid #d1d1d1;
-  font-size: 16px;
-  outline: none;
-  transition: border-color 0.3s ease;
+li button {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
-.search-bar input:focus {
-  border-color: #00796b;
+li button:hover {
+  background-color: #c82333;
+}
+
+li.no-items {
+  background-color: transparent;
+  color: #555;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
 }
