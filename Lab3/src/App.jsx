@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/App.css'
-import Layout from './components/Container'
+import Layout from './components/Layout'
 import PageTitle from './components/PageTitle'
 
 function App() {
