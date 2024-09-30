@@ -6,7 +6,6 @@ const Layout = () => {
   const { todos, addTodo, removeTodo, handleSearch } = useTodos()
   return (
     <div className="layout">
-      <h1>ToDo App</h1>
       <AddTodo onAdd={addTodo} />
       <SearchTodo onSearch={handleSearch} />
       <ToDoList todos={todos} onRemove={removeTodo} />
