@@ -1,6 +1,6 @@
 import AddTodo from './AddTodo'
 import SearchTodo from './SearchTodo'
-import TodoList from './TodoList'
+import ToDoList from './ToDoList'
 import useTodos from '../hooks/useTodos'
 const Layout = () => {
   const { todos, addTodo, removeTodo, handleSearch } = useTodos()
@@ -9,7 +9,7 @@ const Layout = () => {
       <h1>ToDo App</h1>
       <AddTodo onAdd={addTodo} />
       <SearchTodo onSearch={handleSearch} />
-      <TodoList todos={todos} onRemove={removeTodo} />
+      <ToDoList todos={todos} onRemove={removeTodo} />
     </div>
   )
 }

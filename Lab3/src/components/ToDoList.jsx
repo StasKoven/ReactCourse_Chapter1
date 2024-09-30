@@ -1,6 +1,6 @@
-import TodoItem from './TodoItem'
+import TodoItem from './ToDoItem'
 
-const TodoList = ({ todos, onRemove }) => {
+const ToDoList = ({ todos, onRemove }) => {
   return (
     <ul>
       {todos.length > 0 ? (
@@ -14,4 +14,4 @@ const TodoList = ({ todos, onRemove }) => {
   )
 }
 
-export default TodoList
+export default ToDoList
