@@ -27,7 +27,7 @@ const Layout = () => {
         <>
           <AddTodo onAdd={addTodo} />
           <SearchTodo onSearch={handleSearch} />
-          <TodoList todos={todos} onRemove={removeTodo} />
+          <ToDoList todos={todos} onRemove={removeTodo} />
         </>
       )}
     </div>
