@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import AddTodo from './AddTodo'
 import SearchTodo from './SearchTodo'
-import TodoList from './ToDoList'
+import ToDoList from './ToDoList'
 import useTodos from '../hooks/useTodos'
 import useGetAllToDo from '../hooks/useGetAllToDo'
 

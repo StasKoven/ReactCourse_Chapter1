@@ -1,7 +1,7 @@
 const PageTitle = () => {
   return (
     <div>
-      <h1>Text</h1>
+      <h1>ToDo App</h1>
     </div>
   )
 }
