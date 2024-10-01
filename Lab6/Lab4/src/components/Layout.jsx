@@ -1,19 +1,19 @@
-import React, { useEffect } from 'react'
-import AddTodo from './AddTodo'
-import SearchTodo from './SearchTodo'
-import ToDoList from './ToDoList'
-import useTodos from '../hooks/useTodos'
-import useGetAllToDo from '../hooks/useGetAllToDo'
+import React, { useEffect } from 'react';
+import AddTodo from './AddTodo';
+import SearchTodo from './SearchTodo';
+import ToDoList from './ToDoList';
+import useTodos from '../hooks/useTodos';
+import useGetAllToDo from '../hooks/useGetAllToDo';
 
 const Layout = () => {
-  const { todos, addTodo, removeTodo, handleSearch, setTodos } = useTodos()
-  const { isLoading, data, error } = useGetAllToDo()
+  const { todos, addTodo, removeTodo, handleSearch, setTodos } = useTodos();
+  const { isLoading, data, error } = useGetAllToDo();
 
   useEffect(() => {
     if (data) {
-      setTodos(data)
+      setTodos(data);
     }
-  }, [data, setTodos])
+  }, [data, setTodos]);
 
   return (
     <div className="layout">
@@ -31,7 +31,7 @@ const Layout = () => {
         </>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

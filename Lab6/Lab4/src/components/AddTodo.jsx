@@ -1,15 +1,15 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 const AddTodo = ({ onAdd }) => {
-  const [title, setTitle] = useState('')
+  const [title, setTitle] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (title.trim()) {
-      onAdd(title)
-      setTitle('')
+      onAdd(title);
+      setTitle('');
     }
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -21,7 +21,7 @@ const AddTodo = ({ onAdd }) => {
       />
       <button type="submit">Add ToDo</button>
     </form>
-  )
-}
+  );
+};
 
-export default AddTodo
+export default AddTodo;
