@@ -1,4 +1,4 @@
-const SearchTodo = ({ onSearch }) => {
+const SearchToDo = ({ onSearch }) => {
   return (
     <input
       type="text"
@@ -8,4 +8,4 @@ const SearchTodo = ({ onSearch }) => {
   )
 }
 
-export default SearchTodo
+export default SearchToDo
