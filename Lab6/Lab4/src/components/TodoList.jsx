@@ -1,8 +1,8 @@
 import TodoItem from './ToDoItem'
 
-const TodoList = ({ todos, onRemove }) => {
+const ToDoList = ({ todos, onRemove }) => {
   return (
-    <ul className="todo-list">
+    <ul>
       {todos.length > 0 ? (
         todos.map((todo) => (
           <TodoItem key={todo.id} todo={todo} onRemove={onRemove} />
@@ -14,4 +14,4 @@ const TodoList = ({ todos, onRemove }) => {
   )
 }
 
-export default TodoList
+export default ToDoList

@@ -25,7 +25,7 @@ const Layout = () => {
         <p>Error: {error}</p>
       ) : (
         <>
-                <AddTodo onAdd={addTodo} />
+              <AddTodo onAdd={addTodo} />
               <SearchTodo onSearch={handleSearch} />
               <ToDoList todos={todos} onRemove={removeTodo} />
         </>
