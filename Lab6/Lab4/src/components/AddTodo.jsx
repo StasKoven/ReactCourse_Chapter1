@@ -5,8 +5,10 @@ const AddTodo = ({ onAdd }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    onAdd(title)
-    setTitle('')
+    if (title.trim()) {
+      onAdd(title)
+      setTitle('')
+    }
   }
 
   return (
