@@ -1,4 +1,4 @@
-const ToDoItem = ({ todo, onRemove }) => {
+const TodoItem = ({ todo, onRemove }) => {
   return (
     <li className="todo-item">
       {todo.title}
@@ -7,4 +7,4 @@ const ToDoItem = ({ todo, onRemove }) => {
   )
 }
 
-export default ToDoItem
+export default TodoItem
