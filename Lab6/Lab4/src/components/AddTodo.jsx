@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const AddToDo = ({ onAdd }) => {
+const AddTodo = ({ onAdd }) => {
   const [title, setTitle] = useState('')
 
   const handleSubmit = (e) => {
@@ -22,4 +22,4 @@ const AddToDo = ({ onAdd }) => {
   )
 }
 
-export default AddToDo
+export default AddTodo

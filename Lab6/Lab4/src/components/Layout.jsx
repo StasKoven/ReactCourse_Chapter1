@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import AddToDo from './AddToDo'
-import SearchToDo from './SearchToDo'
+import AddTodo from './AddTodo'
+import SearchTodo from './SearchTodo'
 import ToDoList from './ToDoList'
 import useTodos from '../hooks/useTodos'
 import useGetAllToDo from '../hooks/useGetAllToDo'
@@ -25,8 +25,8 @@ const Layout = () => {
         <p>Error: {error}</p>
       ) : (
         <>
-          <AddToDo onAdd={addTodo} />
-          <SearchToDo onSearch={handleSearch} />
+          <AddTodo onAdd={addTodo} />
+          <SearchTodo onSearch={handleSearch} />
           <ToDoList todos={todos} onRemove={removeTodo} />
         </>
       )}
