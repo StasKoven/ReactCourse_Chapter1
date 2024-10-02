@@ -1,4 +1,4 @@
-import TodoItem from './ToDoItem';
+import TodoItem from './ToDoItem'
 
 const ToDoList = ({ todos, onRemove }) => {
   return (
@@ -11,7 +11,7 @@ const ToDoList = ({ todos, onRemove }) => {
         <li>No ToDos available</li>
       )}
     </ul>
-  );
-};
+  )
+}
 
-export default ToDoList;
+export default ToDoList
