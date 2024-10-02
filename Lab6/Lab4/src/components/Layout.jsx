@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
-import AddTodo from './AddTodo';
-import SearchTodo from './SearchTodo';
-import TodoList from './ToDoList';
-import useTodos from '../hooks/useTodos';
-import useGetAllToDo from '../hooks/useGetAllToDo';
+import React, { useEffect } from 'react'
+import AddTodo from './AddTodo'
+import SearchTodo from './SearchTodo'
+import ToDoList from './ToDoList'
+import useTodos from '../hooks/useTodos'
+import useGetAllToDo from '../hooks/useGetAllToDo'
 
 const Layout = () => {
   const { todos, addTodo, removeTodo, handleSearch, setTodos } = useTodos();
@@ -27,11 +27,11 @@ const Layout = () => {
         <>
           <AddTodo onAdd={addTodo} />
           <SearchTodo onSearch={handleSearch} />
-          <TodoList todos={todos} onRemove={removeTodo} />
+          <ToDoList todos={todos} onRemove={removeTodo} />
         </>
       )}
     </div>
   );
 };
 
-export default Layout;
+export default Layout

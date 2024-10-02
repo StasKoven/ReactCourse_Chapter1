@@ -6,4 +6,4 @@ const PageTitle = () => {
   );
 };
 
-export default PageTitle;
+export default PageTitle

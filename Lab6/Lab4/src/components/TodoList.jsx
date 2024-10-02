@@ -1,11 +1,11 @@
-import ToDoItem from './ToDoItem';
+import TodoItem from './ToDoItem';
 
 const ToDoList = ({ todos, onRemove }) => {
   return (
     <ul>
       {todos.length > 0 ? (
         todos.map((todo) => (
-          <ToDoItem key={todo.id} todo={todo} onRemove={onRemove} />
+          <TodoItem key={todo.id} todo={todo} onRemove={onRemove} />
         ))
       ) : (
         <li>No ToDos available</li>

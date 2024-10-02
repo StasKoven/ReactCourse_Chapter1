@@ -8,4 +8,4 @@ const SearchTodo = ({ onSearch }) => {
   );
 };
 
-export default SearchTodo;
+export default SearchTodo
